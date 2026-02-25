@@ -50,6 +50,8 @@ class TTexts {
   static const String tFacebook = "Facebook";
   static const String tPhoneNumber = "Phone Number";
   static const String tGoogle = "Google";
+  static const String tCreateAccount = "Create Account";
+  static const String tOrSignInWith = "Or Sign In With";
 
   // -- Sign Up Screen Text
   static const String tSignUpTitle = "Get On Board!";
@@ -144,6 +146,7 @@ class TTexts {
   static const String submit = "Submit";
   static const String tEmail = "E-Mail";
   static const String tSignup = "Signup";
+  static const String tSignin = "Sign In";
   static const String tLogout = "Logout";
   static const String appName = "T-Store";
   static const String ohSnap = "Oh Snap!";
