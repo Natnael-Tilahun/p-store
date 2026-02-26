@@ -32,7 +32,7 @@ class VerifyEmailScreen extends StatelessWidget {
             children: [
               /// Image
               Image(
-                image: AssetImage(TImages.confirmationAnimation),
+                image: AssetImage(TImages.verificationImage),
                 width: THelperFunctions.screenWidth() * 0.6,
               ),
 
@@ -67,7 +67,7 @@ class VerifyEmailScreen extends StatelessWidget {
                   onPressed: () {
                     Get.to(
                       () => SuccessScreen(
-                        image: TImages.confirmationAnimation,
+                        image: TImages.verificationImage,
                         title: TTexts.yourAccountCreatedTitle,
                         subTitle: TTexts.yourAccountCreatedSubTitle,
                         onPressed: () => Get.to(() => LoginPage()),

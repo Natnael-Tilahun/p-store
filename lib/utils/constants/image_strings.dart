@@ -16,6 +16,9 @@ class TImages {
   static const String onBoardingImage3 =
       "assets/images/on_boarding_images/on-boarding-image-3.png";
 
-  static const String confirmationAnimation =
+  static const String verificationImage =
       "assets/images/animations/sammy-line-man-receives-a-mail.png";
+
+  static const String confirmationImage =
+      "assets/images/animations/Confirmed-rafiki.png";
 }
