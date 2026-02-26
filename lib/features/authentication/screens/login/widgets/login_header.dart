@@ -3,8 +3,8 @@ import 'package:p_store/utils/constants/image_strings.dart';
 import 'package:p_store/utils/constants/sizes.dart';
 import 'package:p_store/utils/constants/text_strings.dart';
 
-class LoginHeader extends StatelessWidget {
-  const LoginHeader({super.key, required this.isDark});
+class TLoginHeader extends StatelessWidget {
+  const TLoginHeader({super.key, required this.isDark});
 
   final bool isDark;
 

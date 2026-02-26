@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
+import 'package:get/state_manager.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:p_store/features/authentication/screens/signup/signup.dart';
 import 'package:p_store/utils/constants/sizes.dart';
 import 'package:p_store/utils/constants/text_strings.dart';
 
-class LoginForm extends StatelessWidget {
-  const LoginForm({super.key});
+class TLoginForm extends StatelessWidget {
+  const TLoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +41,12 @@ class LoginForm extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Checkbox(value: true, onChanged: (value) {}),
+                    SizedBox(
+                      width: 24,
+                      height: 24,
+                      child: Checkbox(value: true, onChanged: (value) {}),
+                    ),
+
                     Text(TTexts.tRememberMe),
                   ],
                 ),
@@ -65,7 +73,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => Signup());
+                },
                 child: Text(TTexts.tCreateAccount),
               ),
             ),
