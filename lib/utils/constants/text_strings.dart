@@ -52,6 +52,12 @@ class TTexts {
   static const String tGoogle = "Google";
   static const String tCreateAccount = "Create Account";
   static const String tOrSignInWith = "Or Sign In With";
+  static const String tOrSignUpWith = "Or Sign Up With";
+  static const String tIAgreeTo = "I agree to";
+  static const String tPrivacyPolicy = "Privacy Policy";
+  static const String tTermsOfUse = "Terms of use";
+  static const String tVerificationCode = "Verification Code";
+  static const String tResendEmailIn = "Resend email in";
 
   // -- Sign Up Screen Text
   static const String tSignUpTitle = "Get On Board!";
@@ -156,6 +162,10 @@ class TTexts {
   static const String tContinue = "Continue";
   static const String tPassword = "Password";
   static const String tFullName = "Full Name";
+  static const String tFirstName = "First Name";
+  static const String tLastName = "Last Name";
+  static const String tUsername = "Username";
+
   static const String tGetStarted = "Get Started";
   static const String tForgetPassword = "Forget Password?";
   static const String homeAppbarSubTitle = "Coding With T";
