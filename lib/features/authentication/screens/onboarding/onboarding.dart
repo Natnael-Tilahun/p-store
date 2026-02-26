@@ -31,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
               OnboardingPage(
                 image: TImages.onBoardingImage2,
                 title: TTexts.onBoardingTitle2,
-                subTitle: TTexts.onBoardingSubTitle3,
+                subTitle: TTexts.onBoardingSubTitle2,
               ),
               OnboardingPage(
                 image: TImages.onBoardingImage3,

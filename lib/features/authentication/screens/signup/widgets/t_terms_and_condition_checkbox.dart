@@ -20,34 +20,36 @@ class TTermsAndConditionCheckbox extends StatelessWidget {
         ),
         SizedBox(width: TSizes.spaceBtwItems),
 
-        Text.rich(
-          TextSpan(
-            children: [
-              TextSpan(
-                text: '${TTexts.tIAgreeTo} ',
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-              TextSpan(
-                text: '${TTexts.tPrivacyPolicy} ',
-                style: Theme.of(context).textTheme.bodyMedium!.apply(
-                  decoration: TextDecoration.underline,
-                  color: isDark ? TColors.white : TColors.primary,
-                  decorationColor: isDark ? TColors.white : TColors.primary,
+        Expanded(
+          child: Text.rich(
+            TextSpan(
+              children: [
+                TextSpan(
+                  text: '${TTexts.tIAgreeTo} ',
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
-              ),
-              TextSpan(
-                text: ' ${TTexts.and} ',
-                style: Theme.of(context).textTheme.bodySmall,
-              ),
-              TextSpan(
-                text: '${TTexts.tTermsOfUse} ',
-                style: Theme.of(context).textTheme.bodyMedium!.apply(
-                  decoration: TextDecoration.underline,
-                  color: isDark ? TColors.white : TColors.primary,
-                  decorationColor: isDark ? TColors.white : TColors.primary,
+                TextSpan(
+                  text: '${TTexts.tPrivacyPolicy} ',
+                  style: Theme.of(context).textTheme.bodyMedium!.apply(
+                    decoration: TextDecoration.underline,
+                    color: isDark ? TColors.white : TColors.primary,
+                    decorationColor: isDark ? TColors.white : TColors.primary,
+                  ),
                 ),
-              ),
-            ],
+                TextSpan(
+                  text: ' ${TTexts.and} ',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                TextSpan(
+                  text: '${TTexts.tTermsOfUse} ',
+                  style: Theme.of(context).textTheme.bodyMedium!.apply(
+                    decoration: TextDecoration.underline,
+                    color: isDark ? TColors.white : TColors.primary,
+                    decorationColor: isDark ? TColors.white : TColors.primary,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ],
