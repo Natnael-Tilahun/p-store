@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:p_store/utils/constants/sizes.dart';
+import 'package:p_store/common/widgets/custom_shapes/containers/t_primary_header_container.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -7,10 +7,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
-        child: Text("Home"),
+      // appBar: AppBar(),
+      body: SingleChildScrollView(
+        child: Column(children: [TPrimaryHeaderContainer(child: Container())]),
       ),
     );
   }

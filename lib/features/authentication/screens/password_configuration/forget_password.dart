@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:p_store/common/styles/spacing_styles.dart';
 import 'package:p_store/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:p_store/utils/constants/sizes.dart';
 import 'package:p_store/utils/constants/text_strings.dart';

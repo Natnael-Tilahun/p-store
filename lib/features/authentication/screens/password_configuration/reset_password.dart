@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_core/get_core.dart';
 import 'package:get/route_manager.dart';
 import 'package:p_store/utils/constants/image_strings.dart';
 import 'package:p_store/utils/constants/sizes.dart';

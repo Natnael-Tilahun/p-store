@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:get/state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:p_store/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:p_store/features/authentication/screens/signup/signup.dart';

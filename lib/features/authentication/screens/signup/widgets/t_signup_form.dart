@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:get/utils.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:p_store/features/authentication/screens/signup/verify_email.dart';
 import 'package:p_store/features/authentication/screens/signup/widgets/t_terms_and_condition_checkbox.dart';

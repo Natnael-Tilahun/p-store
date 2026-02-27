@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:p_store/app.dart';
 import 'package:p_store/utils/constants/sizes.dart';
 
 class Wishlist extends StatelessWidget {

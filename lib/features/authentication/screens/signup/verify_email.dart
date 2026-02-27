@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
-import 'package:p_store/common/widgets/widgets_login_signup/success_screen/success_screen.dart';
+import 'package:p_store/common/widgets/login_signup/success_screen/success_screen.dart';
 import 'package:p_store/features/authentication/screens/login/login.dart';
 import 'package:p_store/utils/constants/image_strings.dart';
 import 'package:p_store/utils/constants/sizes.dart';
