@@ -28,25 +28,24 @@ class Home extends StatelessWidget {
                   TSearchContainer(text: "Search in store", onTap: () {}),
                   SizedBox(height: TSizes.spaceBtwSections),
 
-                  /// Heading
+                  /// Categories
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
+                        /// Heading
                         TSectionHeading(
                           title: 'Popular Categories',
                           showActionButton: false,
                           textColor: TColors.white,
                         ),
                         SizedBox(height: TSizes.spaceBtwItems),
+
+                        /// Categories
+                        THomeCategories(),
                       ],
                     ),
                   ),
-
-                  SizedBox(height: TSizes.spaceBtwItems),
-
-                  /// Categories
-                  THomeCategories(),
                 ],
               ),
             ),
