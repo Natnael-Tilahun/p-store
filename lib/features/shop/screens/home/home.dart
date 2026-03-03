@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:p_store/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:p_store/features/authentication/screens/home/widgets/home_appbar.dart';
+import 'package:p_store/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:p_store/features/shop/screens/home/widgets/home_appbar.dart';
+import 'package:p_store/utils/constants/sizes.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -16,9 +18,13 @@ class Home extends StatelessWidget {
               child: Column(
                 children: [
                   /// Appbar
-                  THomeAppbar(),
+                  const THomeAppbar(),
+                  SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Searchbar
+                  TSearchContainer(text: "Search in store"),
+                  SizedBox(height: TSizes.spaceBtwSections),
+
                   /// Categories
                 ],
               ),
