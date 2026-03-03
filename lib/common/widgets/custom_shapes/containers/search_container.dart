@@ -12,36 +12,41 @@ class TSearchContainer extends StatelessWidget {
     required this.text,
     this.showBackground = true,
     this.showBorder = true,
+    this.onTap,
   });
 
   final IconData? icon;
   final String text;
   final bool showBackground, showBorder;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     final isDark = THelperFunctions.isDarkMode(context);
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
-      child: Container(
-        width: TDeviceUtils.getScreenWidth(context),
-        padding: EdgeInsets.all(TSizes.md),
-        decoration: BoxDecoration(
-          color: showBackground
-              ? isDark
-                    ? TColors.dark
-                    : TColors.light
-              : Colors.transparent,
-          border: showBorder ? Border.all(color: TColors.grey) : null,
-          borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
-        ),
-        child: Row(
-          children: [
-            Icon(icon, color: TColors.darkGrey),
-            SizedBox(width: TSizes.spaceBtwItems),
-            Text(text, style: Theme.of(context).textTheme.bodySmall),
-          ],
+    return GestureDetector(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+        child: Container(
+          width: TDeviceUtils.getScreenWidth(context),
+          padding: EdgeInsets.all(TSizes.md),
+          decoration: BoxDecoration(
+            color: showBackground
+                ? isDark
+                      ? TColors.dark
+                      : TColors.light
+                : Colors.transparent,
+            border: showBorder ? Border.all(color: TColors.grey) : null,
+            borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
+          ),
+          child: Row(
+            children: [
+              Icon(icon, color: TColors.darkGrey),
+              SizedBox(width: TSizes.spaceBtwItems),
+              Text(text, style: Theme.of(context).textTheme.bodySmall),
+            ],
+          ),
         ),
       ),
     );
