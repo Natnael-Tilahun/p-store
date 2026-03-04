@@ -19,7 +19,7 @@ class TPromoSlider extends StatelessWidget {
         CarouselSlider(
           items: banners.map((url) => TRoundedImage(imageUrl: url)).toList(),
           options: CarouselOptions(
-            viewportFraction: 1,
+            viewportFraction: 0.94,
             onPageChanged: (index, _) {
               controller.updatePageIndicator(index);
             },
