@@ -79,8 +79,13 @@ class TTexts {
   static const String tForgetPasswordTitle = "Make Selection!";
   static const String tForgetPasswordSubTitle =
       "Select one of the options given below to reset your password.";
+  static const String tForgetPasswordSubTitle2 =
+      "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link.";
   static const String tResetViaEMail = "Reset via Mail Verification";
   static const String tResetViaPhone = "Reset via Phone Verification";
+  static const String changeYourPasswordTitle = "Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle =
+      "Your Account Security is Our Priority! We're Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
 
   // -- Forget Password Via Phone - Text
   static const String tForgetPhoneSubTitle =

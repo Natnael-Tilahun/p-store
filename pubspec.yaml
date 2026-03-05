@@ -44,6 +44,7 @@ dependencies:
   url_launcher: ^6.3.2
   flutter_native_splash: ^2.4.7
   smooth_page_indicator: ^2.0.1
+  carousel_slider: ^5.1.2
 
   # State Management
   get_storage: ^2.1.1
@@ -74,7 +75,10 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/on_boarding_images/
-    - assets/icons/
+    - assets/images/animations/
+    - assets/images/banners/
+    - assets/images/products/
+    - assets/icons/categories/
     - assets/logos/
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+import 'package:p_store/utils/constants/colors.dart';
+import 'package:p_store/utils/constants/sizes.dart';
+import 'package:p_store/utils/helpers/helper_functions.dart';
+
+class TCircularIcon extends StatelessWidget {
+  const TCircularIcon({
+    super.key,
+    required this.icon,
+    this.width,
+    this.height,
+    this.size = TSizes.lg,
+    this.onPressed,
+    this.color,
+    this.backgroundColor,
+  });
+
+  final double? width, height, size;
+  final IconData icon;
+  final Color? color;
+  final Color? backgroundColor;
+  final VoidCallback? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    final bool isDark = THelperFunctions.isDarkMode(context);
+    return Container(
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(100),
+        color: isDark
+            ? TColors.black.withValues(alpha: 0.9)
+            : TColors.white.withValues(alpha: 0.9),
+      ),
+      child: IconButton(
+        onPressed: onPressed,
+        icon: Icon(icon, color: color, size: size),
+      ),
+    );
+  }
+}

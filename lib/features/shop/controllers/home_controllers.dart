@@ -1,0 +1,12 @@
+import 'package:get/get_instance/get_instance.dart';
+import 'package:get/state_manager.dart';
+
+class HomeControllers extends GetxController {
+  static HomeControllers get instance => Get.find();
+
+  final carouselCurrentIndex = 0.obs;
+
+  void updatePageIndicator(int index) {
+    carouselCurrentIndex.value = index;
+  }
+}
